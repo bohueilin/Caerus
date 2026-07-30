@@ -34,6 +34,24 @@ python3 tools/financial_rigor.py reverse-dcf --price 100 --cash-flow 4 --discoun
 
 輸出為可直接嵌入報告的 Markdown 表格。
 
+`tools/report_audit.py` — 報告數據抽檢（準出流程）。報告寫完後隨機抽樣其中的財務數據點，獨立複取核驗，偏差 > 1% 即打回。
+
+```bash
+# Step 1 抽樣，輸出待填 JSON
+python3 tools/report_audit.py extract --report reports/Ether/Ether-research-20260730.md > audit.json
+
+# Step 2 按 skills/financial-data.md 規範取數，填入 fetched_value / fetched_source（至少 2 個獨立來源）
+
+# Step 3 判決（全部 ≤1% 才【準出】，任一超差或未核驗即【打回】，退出碼 1）
+python3 tools/report_audit.py verdict --results-file audit.json --report Ether-research-20260730.md
+```
+
+抽樣設計：
+- **自動排除不可外部核驗的數字** —— 日期、章節號、星級、作者標註 🔴 的推算值、情景假設、以及報告內部自算的比率（P/F、IRR、現值、置信度自評等）
+- **分層抽樣** —— 金額與數量類佔樣本 ≥70%，避免被大量自算百分比稀釋
+- **種子由報告內容哈希導出** —— 抽樣可復現，但作者無法預先挑選對自己有利的樣本
+- 兩個複取來源自身分歧 >1% 時另行標記，強制在報告中列出並說明採信理由
+
 ## 免責聲明
 
 本儲存庫內容僅為研究記錄與個人觀點，不構成任何投資建議。所有數據來源均已標註，但不保證其完整性與準確性。據此操作，風險自負。
