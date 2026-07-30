@@ -16,6 +16,8 @@
 | 2026-07-12 | Meta Platforms (NASDAQ: META) | [Meta 投资研究报告](reports/Meta/Meta-research-20260712.md) | 觀望。多空雙方在爭論損益表的不同行——多方擁有收入行（+33% 且在加速），空方擁有現金流行與 2027-28 折舊行。兩邊都還沒被證偽 |
 | 2026-07-12 | 美光科技 (NASDAQ: MU) | [美光投资研究报告](reports/美光/美光-research-20260712.md) | 迴避。一家管理良好的公司，一門平庸的生意，一個荒謬的價格。PB 10.98x vs 十年中位數 1.93x |
 | 2026-07-12 | Churchill Capital Corp XI (NASDAQ: CCXI)<br>— 暨 Agility Robotics 借殼上市案 | [CCXI 投资研究报告](reports/CCXI-Agility/CCXI-research-20260712.md) | 強烈迴避。結論不依賴對人形機器人前景的判斷——股價相對信託價溢價 54.4%，發起人 promote 佔公眾股 33.3% 且無任何業績條件，最低現金條件形同虛設。Churchill 系列前 6 只 de-SPAC 中位數回報 −85% |
+| 2026-07-30 | Snorkel AI（未上市） | [Snorkel AI 未上市公司研究報告](reports/snorkel-ai/snorkel-ai-private-20260730.md) | 迴避。用軟體公司的估值（$1.3B）做著已變成人力密集服務的生意。市面流傳的「$148M ARR」極可能是含專家薪酬穿透的總開票額，真實淨收入約 $70M，對應 18.6x EV/S。合理估值中樞 $1.05–1.15B |
+| 2026-07-30 | Handshake AI（未上市） | [Handshake AI 未上市公司研究報告](reports/handshake-ai/handshake-ai-private-20260730.md) | 觀望。執行力頂級的一次性資產再利用，15 個月 0→$1.1B gross。但零 CAC 的院校圖譜優勢未轉化為任何溢價（take rate 31% vs Mercor 30%），且一手招聘數據顯示業務實質正下沉為廣譜職業人力池。合理估值 $4.0–5.0B |
 
 ## 免責聲明
 
